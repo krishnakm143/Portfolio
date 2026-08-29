@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 1500 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
@@ -20,10 +20,9 @@ const greeting = {
   username: "Udit Mishra",
   title: "Hi all, I'm Udit",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Generative AI Engineer 🤖 with 3 years of experience shipping production LLM systems — multi-agent pipelines with LangGraph and LangChain, RAG over vector databases, and voice-enabled conversational AI — all on Python/FastAPI backends."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "/Udit_Mishra_Resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -33,7 +32,7 @@ const socialMediaLinks = {
   github: "https://github.com/krishnakm143",
   linkedin: "https://www.linkedin.com/in/udit-mishra-89714818a/",
   gmail: "https://mailto:krshnac818@gmail.com",
-  
+
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -43,14 +42,19 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "GENERATIVE AI ENGINEER WHO OWNS LLM SYSTEMS END TO END — FROM EMBEDDINGS TO DEPLOYMENT",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Design and deploy multi-agent LLM pipelines with LangGraph and LangChain, orchestrating 7+ model providers (OpenAI, Anthropic, Gemini, Mistral, Cohere, Ollama, HuggingFace)"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ Flutter etc."
+      "⚡ Build RAG architectures with Qdrant and FAISS — embeddings, vector similarity search, and semantic retrieval tuned for production accuracy"
+    ),
+    emoji(
+      "⚡ Ship voice-enabled conversational AI with real-time STT/TTS streaming pipelines"
+    ),
+    emoji(
+      "⚡ Own the backend end to end: FastAPI, PostgreSQL, Redis, Neo4j, Docker, and CI/CD"
     )
   ],
 
@@ -59,20 +63,32 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "LLM Agents",
+      fontAwesomeClassname: "fas fa-robot"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Machine Learning",
+      fontAwesomeClassname: "fas fa-brain"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "Voice AI",
+      fontAwesomeClassname: "fas fa-microphone"
+    },
+    {
+      skillName: "Vector / SQL DBs",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "FastAPI",
+      fontAwesomeClassname: "fas fa-bolt"
     },
     {
       skillName: "reactjs",
@@ -83,30 +99,17 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "Bootstrap",
-      fontAwesomeClassname: "fa-brands fa-bootstrap"
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "Flutter",
-      fontAwesomeClassname: "fa-brands fa-flutter"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
     },
     {
       skillName: "Angular",
       fontAwesomeClassname: "fa-brands fa-angular"
     }
-
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -117,31 +120,25 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Parul University",
-      logo: require("./assets/images/Parul.jpg"),
-      subHeader: "Bachelor Of Computer Application",
-      duration: "August 2022 - Present",
-      desc: "Participated in the ICMR project focused on developing a high-quality patient-centric integrated model for emergency care systems. Collaborated closely with faculty from the Faculty of Engineering & Technology.",
+      schoolName: "SVIT, Vasad",
+      logo: require("./assets/images/svit_logo.png"),
+      subHeader: "Master of Computer Applications (MCA), Information Technology",
+      duration: "August 2025 - April 2027 (Pursuing)",
+      desc: "Deepening expertise in artificial intelligence, machine learning, and advanced software engineering alongside full-time AI engineering work.",
       descBullets: [
-        "Engaged in an implementation research study targeting emergency care systems in selected districts of India.",
-        "Collaborated with a multidisciplinary team to develop a patient-centric integrated model for emergency care.",
-        "Assisted in data collection, analysis, and reporting for the project.",
-        "Contributed to the development and testing of technology solutions to enhance emergency care systems.",
-        "Played a key role in project coordination and communication among team members."
+        "Focus areas: artificial intelligence, machine learning, and scalable system design."
       ]
     },
     {
       schoolName: "Parul University",
       logo: require("./assets/images/Parul.jpg"),
-      subHeader: "Master of Computer Applications (MCA)",
-      duration: "Expected Start: After completing BCA",
-      desc: "Planning to pursue a Master of Computer Applications to deepen knowledge in software development, data science, and advanced computing.",
+      subHeader: "Bachelor of Computer Applications (BCA), Information Technology",
+      duration: "August 2022 - April 2025 | CGPA 7.66",
+      desc: "Participated in an ICMR task-force study developing a high-quality patient-centric integrated model for emergency care systems in selected districts of India.",
       descBullets: [
-        "Aiming to specialize in areas such as artificial intelligence, machine learning, and Full-Stack Developer.",
-        "Intend to work on research projects and internships to gain practical experience.",
-        "Looking forward to collaborating with industry professionals and expanding technical skills."
+        "Collaborated with a multidisciplinary team from the Faculty of Engineering & Technology.",
+        "Contributed to data collection, analysis, and the development of technology solutions for emergency care."
       ]
-
     }
   ]
 };
@@ -152,16 +149,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "AI/ML & LLM Engineering", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Backend — Python / FastAPI",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Frontend — React / Next.js",
+      progressPercentage: "75%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -173,30 +170,34 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Angular Developer",
-      company: "Webbybutter Technologies",
+      role: "Artificial Intelligence Engineer",
+      company: "WebbyButter Technologies",
       companylogo: require("./assets/images/webbybutter_logo.jpeg"),
-      date: "August 2024 – Present",
-      desc: "As an Angular Developer 06 Months Of Internship at Webbybutter Technologies, I will be responsible for implementing visual and interactive elements in web applications using Angular 7.0 and above.",
+      date: "February 2024 – Present",
+      desc: "Building production LLM and machine learning systems for enterprise clients — from multi-agent pipelines to cloud deployment.",
       descBullets: [
-        "Developing and maintaining Angular applications with a focus on user interface and experience",
-  "Collaborating with the development team to integrate APIs and enhance application functionality",
-  "Participating in code reviews and contributing to project documentation"
+        "Architected multi-agent LLM/ML pipelines with LangGraph and LangChain, integrating 7+ model providers (OpenAI, Anthropic, Gemini, Mistral, Cohere, Ollama, HuggingFace).",
+        "Delivered enterprise AI for production clients including Evenuefy and PharmaSuper.ai — RAG pipelines, backend APIs, cloud deployments, and production support.",
+        "Published the open-source Python SDK Ai_Gateway on PyPI — fallback routing, latency tracking, and response quality scoring for multi-provider LLM deployments."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "TopNotch IT Consultant",
-      companylogo: require("./assets/images/topnotchsolutions_logo.jpeg"),
-      date: "May 2024 – June 2024",
-      desc: "Contributed to an e-commerce project in 1 Month Internship, specifically focusing on the login/signup page, home page, and product detail page, with integration of Firebase for user data management. Received hands-on experience in Front-end technology."
+      role: "Software Engineer",
+      company: "WebbyButter Technologies",
+      companylogo: require("./assets/images/webbybutter_logo.jpeg"),
+      date: "August 2023 – February 2024",
+      desc: "Backend engineering for production services before moving into the AI team.",
+      descBullets: [
+        "Built and maintained JWT-secured REST APIs with Alembic migrations on PostgreSQL.",
+        "Maintained CI/CD workflows on GitHub and deployed to Docker/VM environments across testing, staging, and production."
+      ]
     },
     {
-      role: "Graphic Design",
-      company: "Parul University",
-      companylogo: require("./assets/images/Parul.jpg"),
-      date: "Oct 2023 – Jan 2024",
-      desc: "During my internship at Parul University (SRC CELL), I contributed to various graphic design projects, including creating visual content for promotional materials, social media, and internal communications. I collaborated with the design team to develop creative solutions that met the university's branding guidelines and project requirements."
+      role: "Frontend Developer Intern",
+      company: "TopNotch IT Consultant",
+      companylogo: require("./assets/images/topnotchsolutions_logo.jpeg"),
+      date: "May 2023 – June 2023",
+      desc: "Built responsive single-page applications with React.js — reusable component architecture, API integration, and performance optimization via Hooks and lazy loading."
     }
   ]
 };
@@ -212,31 +213,38 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "PROJECTS DEVELOPED DURING ACADEMIC STUDIES",
+  title: "Things I've Built",
+  subtitle: "PRODUCTION AI SYSTEMS AND ENGINEERING PROJECTS",
   projects: [
     {
-      image: require("./assets/images/icmrnewlogo-1024x324.png"),
-      projectName: "ICMR",
-      projectDesc: "An Implementation Research StudyA High-quality patient centric integrated model for emergency care systems in selected districts of India AN ICMR TASK FORCE STUDY",
+      projectName: "PharmaSuper.ai",
+      projectDesc: "AI assistant for the pharmaceutical industry. Built enterprise ML and RAG features — backend APIs, vector search pipelines, and semantic document retrieval over pharmaceutical knowledge — with multi-model integration and production monitoring."
+    },
+    {
+      projectName: "Evenuefy",
+      projectDesc: "AI-powered event management platform for virtual, hybrid, and in-person events. Built LLM conversational assistants for attendee support, RAG-based knowledge search, and managed production deployments and cloud infrastructure."
+    },
+    {
+      projectName: "LoopMind Memory",
+      projectDesc: "Production AI memory backend. Hierarchical memory with ANN/HNSW retrieval at sub-100ms lookup, tamper-evident append-only storage with a signed audit ledger — containerized with PostgreSQL, Redis, Qdrant, Neo4j, and FastAPI."
+    },
+    {
+      projectName: "Ai_Gateway — Open Source",
+      projectDesc: "Python SDK published on PyPI for LLM observability: fallback routing, latency tracking, and response quality evaluation across OpenAI, Anthropic, Gemini, and open-source models.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "https://icmr-lyart.vercel.app/"
+          name: "View on PyPI",
+          url: "https://pypi.org/project/ai-gateway/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/shopping.jpg"),
-      projectName: "Online Shopping Website",
-      projectDesc: "Developed a fully functional online shopping website, implementing features such as user authentication, product catalog, shopping cart, and payment gateway integration. The project utilized technologies like HTML, CSS, JavaScript, And react js, providing a seamless shopping experience for users.",
-            footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://github.com/krishnakm143/Ecommerce-Website"
-        }
-      ]
+      projectName: "SQL Conversational Agent",
+      projectDesc: "Natural language to SQL agent with query validation, sandboxed execution, and a feedback/rating loop — powered by OpenAI GPT-4o with Qdrant-based schema retrieval."
+    },
+    {
+      projectName: "Conversational AI Voice Assistant",
+      projectDesc: "Real-time voice and text AI interface with streaming responses, transcript export, and a browser STT/TTS pipeline — built with Next.js, TypeScript, and Browser Audio APIs."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -248,30 +256,28 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Certifications and milestones from along the way.",
 
   achievementsCards: [
     {
-      title: "IIT Bombay Spoken Tutorial ",
+      title: "Python Programming — IIT Bombay",
       subtitle:
-        "Successfully completed the Python 3.4.3 training with a score of 91%, earning 4 credits from the Faculty of IT & Computer Science, Parul University.",
+        "Completed the IIT Bombay Spoken Tutorial Python training with a score of 91%, earning 4 credits from the Faculty of IT & Computer Science.",
       image: require("./assets/images/maxresdefault.jpg"),
-      imageAlt: "Index Logo ",
+      imageAlt: "IIT Bombay Spoken Tutorial",
       footerLink: [
         {
-          name: " View Certification",
+          name: "View Certification",
           url: "https://drive.google.com/file/d/1On1hBAEgKdDoNejVFyLo8hXPoAM4JTdu/view?usp=sharing"
-        },
-        
-        
+        }
       ]
     },
     {
-      title: "Internship Completion Certificate",
+      title: "Frontend Internship — TopNotch",
       subtitle:
-"Completed an internship as a Front-End Developer at Top Notch, where I contributed to building dynamic and responsive web applications.",     
- image: require("./assets/images/Untitled design (1).png"),
-      imageAlt: "Top-Notch Logo",
+        "Completed a Front-End Developer internship at TopNotch IT Consultant, contributing to dynamic and responsive web applications.",
+      image: require("./assets/images/Untitled design (1).png"),
+      imageAlt: "TopNotch Logo",
       footerLink: [
         {
           name: "View Certification",
@@ -279,14 +285,13 @@ const achievementSection = {
         }
       ]
     },
-
     {
-      title: "Software Engineering",
-      subtitle: "Completed Certification in Software Engineering from MindLuster, gaining expertise in full-stack development, and agile methodologies.",
+      title: "Software Engineering — MindLuster",
+      subtitle:
+        "Certification in Software Engineering covering full-stack development and agile methodologies.",
       image: require("./assets/images/main_logo.webp"),
-      imageAlt: "Mind-luster Logo",
+      imageAlt: "MindLuster Logo",
       footerLink: [
-      
         {
           name: "View Certification",
           url: "https://drive.google.com/file/d/1HZXhb8_C6CxvLYctBoS9CjLFRL4btm26/view?usp=sharing"
@@ -304,20 +309,7 @@ const blogSection = {
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
+  blogs: [],
   display: false // Set false to hide this section, defaults to true
 };
 
@@ -329,14 +321,7 @@ const talkSection = {
     "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
   ),
 
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
+  talks: [],
   display: false // Set false to hide this section, defaults to true
 };
 
@@ -347,9 +332,7 @@ const podcastSection = {
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
+  podcast: [],
   display: false // Set false to hide this section, defaults to true
 };
 
